@@ -37,7 +37,7 @@ fetching: http://registry.npmjs.org/npm/-/npm-3.8.7.tgz
 
 此时node已经安装好了，没有问题，可以通过node -v查看。
 但npm -v可能还是不工作，没关系
-我们需要把 ~/.npm-packages/bin 加入 PATH 这样npm就变成全局变量。
+我们需要把 ~/.npm-packages/bin (~/.node/bin某些情况)加入 PATH 这样npm就变成全局变量。
 sudo nano ~/.profile
 添加
 export PATH="$HOME/.npm-packages/bin:$PATH"
